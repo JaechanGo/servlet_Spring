@@ -16,7 +16,7 @@
     <meta charset="UTF-8">
 </head>
 <body>
-성공
+안ㄴ여하새요
 <ul>
     <li>id=<%=member.getId()%></li>
     <li>username=<%=member.getUsername()%></li>
