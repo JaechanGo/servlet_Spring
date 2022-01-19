@@ -20,7 +20,7 @@ class MemberRepositoryTest {
     }
     @Test
     void save(){
-        Member member = new Member(1L,"kim",20);
+        Member member = new Member("kim",20);
         Member savedMember = memberRepository.save(member);
         Member findMember = memberRepository.findId(savedMember.getId());
 
@@ -29,8 +29,8 @@ class MemberRepositoryTest {
 
     @Test
     void findAll(){
-        Member member = new Member(1L,"kim",20);
-        Member member1 = new Member(4L,"Han",24);
+        Member member = new Member("kim",20);
+        Member member1 = new Member("Han",24);
 
         Member savedMember = memberRepository.save(member);
         Member savedMember2 = memberRepository.save(member1);
